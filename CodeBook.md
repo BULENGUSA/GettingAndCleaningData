@@ -7,26 +7,26 @@ Data URL: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20H
 ##Files
 
 ###Files included in "UCI HAR Dataset"
-*activity_labels.txt
-*features.txt
-*features_info.txt
-*subject_test.txt
-*X_test.txt
-*Y_test.txt
-*subject_train.txt
-*X_train.txt
-*Y_train.txt
-*README.txt
+* activity_labels.txt
+* features.txt
+* features_info.txt
+* subject_test.txt
+* X_test.txt
+* Y_test.txt
+* subject_train.txt
+* X_train.txt
+* Y_train.txt
+* README.txt
 
 ##Variables
 
 ###Activities
-*WALKING
-*WALKING_UPSTAIRS
-*WALKING_DOWNSTAIRS
-*SITTING
-*STANDING
-*LAYING
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
 
 ###Subjects
 Labeled as numbers between 1 - 30.
@@ -59,5 +59,7 @@ timeBodyAccelerometer-Mean()-X" "timeBodyAccelerometer-Mean()-Y" "timeBodyAccele
 "frequencyBodyGyroscopeJerkMagnitude-StDev()"
 
 where, 
+
 Mean = the mean of the measurement
+
 StDev = the standard deviation of the measurement
