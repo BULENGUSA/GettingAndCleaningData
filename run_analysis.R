@@ -55,4 +55,10 @@ names(Mergedata) <- gsub("mean", "Mean", names(Mergedata))
 
 # 5. Creates a second, independent tidy data set with the average of each variable 
 # for each activity and each subject
-write.table(Mergedata, "tidy.txt", row.name = FALSE)
+Mergedata$subject <- as.factor(Mergedata$subject)
+Meragedata <- data.table(Mergedata)
+
+Tidydata <- aggregate(. ~subject + activitycode, Mergedata, mean)
+Tidydata <- Mergedata[order(Mergedata$subject, Mergedata$activitycode),]
+
+write.table(Tidydata, "tidy.txt", row.name = FALSE)
